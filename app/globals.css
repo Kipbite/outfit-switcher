@@ -1,0 +1,48 @@
+* {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.outfit-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 15px;
+	width: 100%;
+	font-size: 12px;
+}
+
+.outfit-option {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	transition: ease-in-out .05s;
+
+	&:disabled {
+		opacity: 0.8;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	img {
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.label {
+		font-weight: bold;
+	}
+
+	.price {
+		font-size: .5rem;
+		font-style: italic;
+		color: #656565
+	}
+}
